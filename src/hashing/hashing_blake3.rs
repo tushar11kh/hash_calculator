@@ -1,6 +1,7 @@
-pub fn calculate(x: &mut String)->String{
+pub fn calculate(x: &String){
 
 
-    blake3::hash(x.as_bytes()).to_string()
+    let y =blake3::hash(x.as_bytes()).to_string();
+    println!("Blake3 of {x}: {y}")
 
 }

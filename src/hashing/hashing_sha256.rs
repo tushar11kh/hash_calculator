@@ -1,7 +1,9 @@
 use sha256::digest;
 
-pub fn calculate(x:&mut String)->String{
+pub fn calculate(x:&String){
 
-    return digest(x.as_str());
+    let y = digest(x.as_str());
+
+    println!("Sha256 of {x}: {y}")
 
 }
